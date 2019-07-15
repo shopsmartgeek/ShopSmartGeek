@@ -1,5 +1,4 @@
 var currentiframe = document.getElementById("ifr2");
-var lastFrameGame = false;
 
 function LoadHome() {
     SwapFrame()
@@ -14,10 +13,6 @@ function SwapFrame() {
     } else {
         currentiframe = document.getElementById("ifr1");
     }
-}
-
-function write() {
-    // do nothing
 }
 
 setTimeout(function () { LoadHome(); }, 100);
