@@ -1,13 +1,9 @@
-html {
-    height: 100%;
-    width:1920px;
-}
-
 h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: #F8F8F8;
     height: auto;
+    min-width:1612px;
     font-size: 74px;
     text-align:center;
     vertical-align: middle;
@@ -23,7 +19,6 @@ body {
 }
 
 table {
-    width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
 }
@@ -95,7 +90,6 @@ p {
 iframe {
     padding: 0;
     margin-left: 8%;
-    margin-right: 8%;
     width: 84%;
     min-width: 1612px;
     transition: 1s ease;
@@ -103,6 +97,7 @@ iframe {
     border: none;
     overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
 }
 
 ul {
