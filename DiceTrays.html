@@ -11,7 +11,9 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Javascript/navigation.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
     <link rel="stylesheet" href="Style/core.css">
 </head>
@@ -19,7 +21,7 @@
 <title>Dungeons &amp; Dragons Dice Trays</title>
 <meta name="description" content="Coolest Dungeons & Dragons dice trays from around the web! Guaranteed to land a natural 20." />
 <meta name="keywords" content="dice tray, dungeons and dragons, dnd, 5e, tomb of horrors" />
-<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--    TEMPLATE
         <span class="container panel productpanel">
@@ -41,7 +43,17 @@
     <h1>
         Dungeons &amp; Dragons Dice Trays
     </h1>
-    <span class="content-frame">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./DiceTrays.html" class="active">Dice Trays</a>
+        <a href="./Dice.html">Dice</a>
+        <a href="./Accessories.html">D&D Accessories</a>
+        <a href="javascript:void(0);" class="icon" onclick="updateMenu()">&#9776;</a>
+    </div>
+
+    <div class="content-frame">
         <span class="container panel productpanel">
             <div class="productimage">
                 <a href="https://amzn.to/2JKEFsy" target="_blank"><img src="./Images/dicetray_cthulu.png" alt="Cthulu Dice Tray" /></a>
@@ -282,5 +294,5 @@
                 <a href="https://amzn.to/2y8LVb7" class="btn btn-info link linkbutton" role="button" target="_blank">Shop Now</a>
             </div>
         </span>
-    </span>
+    </div>
 </body>

@@ -29,63 +29,10 @@ table {
     table-layout: fixed;
 }
 
-button {
-    border: 0;
-    padding: 8px;
-    text-align: center;
-    vertical-align: middle;
-    height: 80px;
-    width: 100%;
-    background: url(../Images/b1.png);
-    font-size: 2.5vw;
-    color: #F8F8F8;
-    transition: background 0.5s ease, color 1s ease;
-}
-
-@media all and (min-width: 600px) {
-    button {
-        font-size: 24px;
-    }
-}
-
-button:hover {
-    background: url(../Images/b2.png);
-}
-
-button:active {
-    background: url(../Images/b3.png);
-}
-
 td {
     text-align: center;
     vertical-align: middle;
     padding: 0;
-}
-
-.navigation {
-    align-self: center;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    min-width: 160px;
-    width: 25%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    transition: opacity 0.4s ease, color .7s ease;
-}
-
-.dropdown:hover .dropdown-content {
-    visibility: visible;
-    opacity: 1;
-}
-
-.dropdown:not(:hover) .dropdown-button {
-    color: #5A5050;
 }
 
 p {
@@ -93,23 +40,9 @@ p {
     margin: 0;
 }
 
-/*iframe {
-    padding: 0;
-    margin-left: 8%;
-    width: 84%;
-    min-width: 1612px;
-    transition: 1s ease;
-    border-radius: 4px;
-    border: none;
-    overflow: hidden;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-}*/
 .content-frame {
     padding: 0;
     margin:auto;
-    /*margin-left: 9%;
-    max-width:82%;*/
     min-width:306px;
     transition: 1s ease;
     border-radius: 4px;
@@ -155,58 +88,11 @@ ul {
     list-style-type: none;
 }
 
-
-/*.product img {
-    border-radius: 4px;
-    max-width: 248px;
-    max-height: 248px;
-    width: auto;
-    height: auto;
-    margin-left: -5px;
-    margin-top: -5px;
-    display:block;
-}
-
-    .product img:hover {
-        box-shadow: 0 0 2px 1px rgba(0, 140, 186, .3);
-        animation-duration: .1s;
-        animation-name: fadeborder;
-    }
-
-.product {
-    display: inline-block;
-    align-content: center;
-    text-align: center;
-    width:300px;
-    height:400px;
-    padding: 5px;
-}
-
-    .product span {
-        font-weight: bold;
-        font-size: 12pt;
-    }
-
-    .product p {
-        font-size: 10pt;
-        text-align: justify;
-    }
-
-.productpanel {
-    padding: 10px;
-}*/
-
 .linkbutton{
     vertical-align:bottom;
 }
 
-
-
-
-
-
-/*/////*/
-
+/*Products*/
 .productpanel {
     width: 302px;
     height:396px;
@@ -219,32 +105,32 @@ ul {
     overflow: hidden;
 }
 
-    .productimage img {
-        width: 302px;
-        height: 252px;
-        border-radius: 4px;
-    }
+.productimage img {
+    width: 302px;
+    height: 252px;
+    border-radius: 4px;
+}
 
 .productdescription {
     height: 100px;
 }
 
-    .productdescription span {
-        font-weight: bold;
-        font-size: 12pt;
-        text-align: center;
-        width: 100%;
-        display: block;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+.productdescription span {
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
-    .productdescription p {
-        font-size: 10pt;
-        text-align: justify;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+.productdescription p {
+    font-size: 10pt;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .productshopbutton {
     text-align: center;
@@ -256,6 +142,139 @@ ul {
     width: 100%;
 }
 
-    .producttable td {
-        padding: 5px;
+.producttable td {
+    padding: 5px;
+}
+/*End products*/
+
+/*Nagivation*/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    background: url(../Images/b1.png);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #808080;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #808080;
+    /*background-color: #555;*/
+    color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
     }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+/*End Navigation*/

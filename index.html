@@ -19,7 +19,7 @@
 <title>Shop Smark Geek</title>
 <meta name="description" content="Shop for the best geeky gifts and gadgets from across the web. Hobbies, games, and technology that won&apos;t disappoint!" />
 <meta name="keywords" content="shop smart geek, geeky gifts, cool tech, websites like thisiswhyimbroke, coolstuff, cool gifts" />
-<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--    TEMPLATE
         <span class="container panel productpanel">
@@ -36,32 +36,23 @@
         </span>
 
 -->
-<!--Navigation Menu-->
-<!--<div class="navigation">
-    <table>
-        <tr>
-            <td><button id="home_button" onclick="LoadHome()">Newest Products</button></td>
-            <td><button id="resume_button" onClick="LoadResume()">Gadgets</button></td>
-            <td class="dropdown">
-                <button id="portfolio_button">Hobby</button>
-                <ul class="dropdown-content">
-                    <li><button class="dropdown-button" onclick="LoadSC()">Board Games</button></li>
-                    <li><button class="dropdown-button" onclick="LoadFlappy()">Role-playing Games</button></li>
-                    <li><button class="dropdown-button" onclick="LoadFinalTrial()">3D Printing</button></li>
-                    <li><button class="dropdown-button" onclick="LoadCOTE()">Miniatures</button></li>
-                    <li><button class="dropdown-button" onclick="LoadWebsiteInfo()">Card Games</button></li>
-                </ul>
-            </td>
-            <td><button id="contact_button" onclick="LoadContact()">Household</button></td>
-        </tr>
-    </table>
-</div>-->
+
 <!--Content-->
 <body>
     <!--Header-->
     <h1>
         Shop Smart Geek
     </h1>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./DiceTrays.html">Dice Trays</a>
+        <a href="#dice">Dice</a>
+        <a href="#accessories">D&D Accessories</a>
+        <a href="javascript:void(0);" class="icon" onclick="updateMenu()">&#9776;</a>
+    </div>
+
     <span class="content-frame">
         <span class="container panel productpanel">
             <div class="productimage">
@@ -75,7 +66,7 @@
                 <a href="https://amzn.to/32LzRuD" class="btn btn-info link linkbutton" role="button" target="_blank">Shop Now</a>
             </div>
         </span>
-        <span class="container panel productpanel">
+        <span class="container panel productpanel" style="display:none;">
             <div class="productimage">
                 <a href="https://amzn.to/2XSVj1T" target="_blank"><img src="./Images/alita4.png" /></a>
             </div>
